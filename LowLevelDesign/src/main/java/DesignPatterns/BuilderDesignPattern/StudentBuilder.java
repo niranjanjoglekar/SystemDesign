@@ -7,6 +7,7 @@ public abstract class StudentBuilder {
     int rollNumber;
     int age;
     String name;
+    String streamType;
 
     public StudentBuilder setRollNumber(int rollNumber){
         this.rollNumber = rollNumber;
@@ -21,6 +22,11 @@ public abstract class StudentBuilder {
     public StudentBuilder setName(String name){
         this.name = name;
         return  this;
+    }
+
+    public StudentBuilder setStreamType(String name){
+        this.streamType  = name;
+        return this;
     }
 
     public Student build(){
